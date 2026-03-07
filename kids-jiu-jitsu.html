@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Jiu-Jitsu Classes | BJJ for Children Ages 5–17 — Prodigy Jiu-Jitsu</title>
+  <meta name="description" content="Enroll your child in Prodigy Jiu-Jitsu's Kids BJJ program. Gi &amp; No-Gi classes for ages 5–17. Build confidence, discipline &amp; self-defense skills. Free trial available." />
+  <link rel="canonical" href="https://prodigyjiujitsu.com/kids-jiu-jitsu" />
+  <meta property="og:title" content="Kids Jiu-Jitsu Classes | BJJ for Children Ages 5–17 — Prodigy Jiu-Jitsu" />
+  <meta property="og:image" content="https://prodigyjiujitsu.com/assets/images/kids-jiu-jitsu/combat.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://prodigyjiujitsu.com/"},{"@type":"ListItem","position":2,"name":"Programs"},{"@type":"ListItem","position":3,"name":"Kids Jiu-Jitsu","item":"https://prodigyjiujitsu.com/kids-jiu-jitsu"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    :root { --kids-accent: #0d9f6e; --kids-glow: rgba(13,159,110,0.3); }
+    .kids-hero .page-hero-bg { background-image: url('assets/images/kids-jiu-jitsu/class-1.jpg'); background-position: center 30%; }
+    .kids-hero { min-height: 70vh; }
+    .kids-hero .page-hero-content { padding-left: 3rem; }
+
+    /* BENEFITS */
+    #kids-benefits { padding: 100px 0; background: var(--bg); }
+    .kids-benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .kids-benefit-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 2rem; transition: transform 0.3s var(--ease), border-color 0.3s; }
+    .kids-benefit-card:hover { transform: translateY(-6px); border-color: rgba(13,159,110,0.4); }
+    .benefit-check { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+    .benefit-check-icon { width: 32px; height: 32px; border-radius: 50%; background: rgba(13,159,110,0.15); border: 1.5px solid rgba(13,159,110,0.4); display: flex; align-items: center; justify-content: center; color: var(--kids-accent); font-size: 0.9rem; flex-shrink: 0; animation: checkPulse 2s ease-in-out infinite; }
+    @keyframes checkPulse { 0%,100%{box-shadow:0 0 0 0 rgba(13,159,110,0)} 50%{box-shadow:0 0 0 5px rgba(13,159,110,0)} }
+    .benefit-check h3 { font-size: 1.15rem; }
+    .kids-benefit-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* AGE GROUPS */
+    #age-groups { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .age-groups-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .age-card { background: var(--bg); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 2.5rem 2rem; text-align: center; transition: transform 0.4s var(--ease), border-color 0.4s, box-shadow 0.4s; }
+    .age-card:hover { transform: translateY(-10px) scale(1.01); border-color: rgba(13,159,110,0.4); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+    .age-badge { display: inline-block; background: rgba(13,159,110,0.15); color: var(--kids-accent); border: 1px solid rgba(13,159,110,0.35); border-radius: 100px; padding: 0.35rem 1rem; font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.25rem; }
+    .age-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .age-card h3 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .age-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; }
+    .age-card .btn { width: 100%; justify-content: center; background: rgba(13,159,110,0.15); color: var(--kids-accent); border: 1.5px solid rgba(13,159,110,0.4); box-shadow: none; }
+    .age-card .btn:hover { background: var(--kids-accent); color: #fff; transform: translateY(-2px); }
+
+    /* WHAT THEY LEARN */
+    #kids-learn { padding: 100px 0; background: var(--bg); }
+    .learn-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .learn-text h2 { font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 1rem; }
+    .learn-text p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; }
+    .skills-diagram { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .skill-block { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 1.25rem; text-align: center; transition: border-color 0.2s, transform 0.3s var(--ease); }
+    .skill-block:hover { border-color: rgba(13,159,110,0.4); transform: translateY(-4px); }
+    .skill-block .skill-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .skill-block h4 { font-size: 0.95rem; margin-bottom: 0.25rem; }
+    .skill-block p { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* SAFETY */
+    #safety { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .safety-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .safety-visual { position: relative; }
+    .safety-visual img { width: 100%; height: 400px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.07); box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
+    .safety-badge-overlay { position: absolute; top: 1.5rem; right: 1.5rem; background: rgba(13,159,110,0.9); border-radius: 8px; padding: 1rem; text-align: center; }
+    .safety-badge-overlay .shield-icon { font-size: 2rem; display: block; margin-bottom: 0.3rem; }
+    .safety-badge-overlay span { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; }
+    .safety-points { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem; }
+    .safety-point { display: flex; gap: 1rem; align-items: flex-start; }
+    .safety-point-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(13,159,110,0.12); border: 1.5px solid rgba(13,159,110,0.3); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+    .safety-point h4 { font-size: 1rem; margin-bottom: 0.2rem; }
+    .safety-point p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* KIDS SCHEDULE */
+    #kids-schedule { padding: 100px 0; background: var(--bg); }
+    .kids-sched-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2.5rem 0; }
+    .kids-sched-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 1.25rem; transition: border-color 0.2s; }
+    .kids-sched-card:hover { border-color: rgba(13,159,110,0.4); }
+    .kids-sched-day { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--kids-accent); margin-bottom: 0.6rem; }
+    .kids-sched-class { font-size: 0.82rem; color: var(--text-muted); padding: 0.3rem 0; }
+    .comp-badge { display: inline-block; background: rgba(192,57,43,0.12); color: var(--accent); border: 1px solid rgba(192,57,43,0.25); border-radius: 3px; font-size: 0.65rem; padding: 0.15rem 0.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-left: 0.3rem; }
+
+    /* COMPETITION CALLOUT */
+    #comp-callout { padding: 80px 0; background: var(--surface); }
+    .comp-banner { background: linear-gradient(135deg, rgba(192,57,43,0.08) 0%, rgba(10,10,10,0) 100%); border: 1px solid rgba(192,57,43,0.2); border-radius: 16px; padding: 3rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+    .comp-banner h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); margin-bottom: 0.75rem; }
+    .comp-banner p { color: var(--text-muted); line-height: 1.7; max-width: 540px; }
+    .comp-banner-img { width: 320px; height: 220px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); }
+
+    /* PARENT TESTIMONIALS */
+    #parent-testimonials { padding: 80px 0; background: var(--bg); }
+    .parent-t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+    .parent-t-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 2rem; }
+    .t-stars { color: #f0b429; font-size: 1rem; margin-bottom: 1rem; }
+    .t-quote { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem; font-style: italic; }
+    .t-author { display: flex; align-items: center; gap: 0.75rem; }
+    .t-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--kids-accent); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 800; flex-shrink: 0; }
+    .t-name { font-weight: 600; font-size: 0.88rem; }
+    .t-meta { font-size: 0.75rem; color: var(--text-muted); }
+
+    @media (max-width: 768px) {
+      .kids-benefits-grid { grid-template-columns: 1fr 1fr; }
+      .age-groups-grid { grid-template-columns: 1fr; }
+      .learn-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .safety-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .kids-sched-grid { grid-template-columns: 1fr 1fr; }
+      .comp-banner { grid-template-columns: 1fr; }
+      .comp-banner-img { width: 100%; height: 200px; }
+      .parent-t-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .kids-benefits-grid { grid-template-columns: 1fr; }
+      .skills-diagram { grid-template-columns: 1fr 1fr; }
+      .kids-sched-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav id="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Prodigy Jiu-Jitsu" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li class="nav-dropdown"><a href="#" class="active">Programs</a>
+          <div class="dropdown-menu">
+            <a href="adult-jiu-jitsu.html" class="dropdown-card"><div class="dropdown-icon">🥋</div><h4>Adult Jiu-Jitsu</h4><p>Gi &amp; No-Gi for all levels.</p></a>
+            <a href="kids-jiu-jitsu.html" class="dropdown-card"><div class="dropdown-icon">👦</div><h4>Kids Jiu-Jitsu</h4><p>Ages 5–17. Confidence &amp; discipline.</p></a>
+            <a href="muay-thai.html" class="dropdown-card"><div class="dropdown-icon">🥊</div><h4>Muay Thai</h4><p>The Art of Eight Limbs.</p></a>
+          </div>
+        </li>
+        <li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Free Class →</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="#" style="pointer-events:none;color:var(--text-muted)">Programs</a>
+    <div class="mobile-submenu"><a href="adult-jiu-jitsu.html">→ Adult Jiu-Jitsu</a><a href="kids-jiu-jitsu.html">→ Kids Jiu-Jitsu</a><a href="muay-thai.html">→ Muay Thai</a></div>
+    <a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Book Your Free Class →</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero kids-hero" aria-label="Kids Jiu-Jitsu hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="#">Programs</a><span>/</span><span>Kids Jiu-Jitsu</span></nav>
+      <span class="section-label" style="color:var(--kids-accent)">Kids Program · Ages 5–17</span>
+      <h1>Give Your Child the Gift of<br><em style="color:var(--accent);font-style:normal">Confidence,</em> Discipline<br>&amp; Self-Defense.</h1>
+      <p class="hero-sub">Prodigy Jiu-Jitsu's Kids program builds champions on the mat — and leaders in life. Gi &amp; No-Gi classes for ages 5–17.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-primary">Book a Free Kids Class →</a>
+        <a href="#kids-schedule" class="btn btn-secondary">View Kids Schedule</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARENT BENEFITS -->
+  <section id="kids-benefits" aria-labelledby="kb-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--kids-accent)">Why Jiu-Jitsu for Kids</span>
+        <h2 id="kb-title">What Jiu-Jitsu Does for Your Child</h2>
+        <p>Six life-changing benefits that go far beyond the mat — and that parents see in weeks, not years.</p>
+      </div>
+      <div class="kids-benefits-grid">
+        <div class="kids-benefit-card reveal"><div class="benefit-check"><div class="benefit-check-icon">✓</div><h3>Unshakeable Confidence</h3></div><p>Achieving new skills and earning stripes builds a deep, earned confidence that carries into school, sports, and social situations.</p></div>
+        <div class="kids-benefit-card reveal" style="transition-delay:80ms"><div class="benefit-check"><div class="benefit-check-icon">✓</div><h3>Real Self-Defense</h3></div><p>Jiu-jitsu is one of the most effective anti-bullying tools available — children learn to de-escalate, escape, and if necessary, defend themselves safely.</p></div>
+        <div class="kids-benefit-card reveal" style="transition-delay:160ms"><div class="benefit-check"><div class="benefit-check-icon">✓</div><h3>Focus &amp; Discipline</h3></div><p>Structured classes build attention spans, respect for coaches, and the ability to focus — skills that directly improve school performance.</p></div>
+        <div class="kids-benefit-card reveal" style="transition-delay:240ms"><div class="benefit-check"><div class="benefit-check-icon">✓</div><h3>Safe &amp; Expert-Led</h3></div><p>Certified instructors run age-appropriate classes with supervised, controlled sparring. Safety is our top priority at every level.</p></div>
+        <div class="kids-benefit-card reveal" style="transition-delay:320ms"><div class="benefit-check"><div class="benefit-check-icon">✓</div><h3>Positive Community</h3></div><p>Kids train alongside like-minded peers in a supportive, team-oriented environment that builds lifelong friendships and sportsmanship.</p></div>
+        <div class="kids-benefit-card reveal" style="transition-delay:400ms"><div class="benefit-check"><div class="benefit-check-icon">✓</div><h3>Fitness &amp; Healthy Habits</h3></div><p>Screen time replaced by mat time. Jiu-jitsu develops strength, coordination, flexibility, and a love for physical activity that lasts a lifetime.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGE GROUPS -->
+  <section id="age-groups" aria-labelledby="age-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--kids-accent)">Programs by Age</span>
+        <h2 id="age-title">Age Group Programs</h2>
+        <p>Classes are structured specifically for each age group to maximize development and engagement.</p>
+      </div>
+      <div class="age-groups-grid">
+        <div class="age-card reveal"><div class="age-badge">Ages 5–7</div><div class="age-icon">🌟</div><h3>Little Prodigies</h3><p>Fun, high-energy classes focused on basic motor skills, body awareness, listening, and foundational positions. Learning through play — no pressure, all encouragement.</p><a href="contact.html" class="btn" style="width:100%;justify-content:center;margin-top:auto">Enroll This Age Group →</a></div>
+        <div class="age-card reveal" style="transition-delay:150ms"><div class="age-badge">Ages 8–12</div><div class="age-icon">⚡</div><h3>Youth Warriors</h3><p>Structured technique development, introduction to controlled sparring, team drills, and the beginning of the belt progression journey. Where serious skills get built.</p><a href="contact.html" class="btn" style="width:100%;justify-content:center;margin-top:auto">Enroll This Age Group →</a></div>
+        <div class="age-card reveal" style="transition-delay:300ms"><div class="age-badge">Ages 13–17</div><div class="age-icon">🔥</div><h3>Teen Competitors</h3><p>Advanced curriculum, competition preparation, leadership development, and high-intensity training for teens who are serious about the sport and personal growth.</p><a href="contact.html" class="btn" style="width:100%;justify-content:center;margin-top:auto">Enroll This Age Group →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT THEY LEARN -->
+  <section id="kids-learn" aria-labelledby="learn-title">
+    <div class="container">
+      <div class="learn-layout">
+        <div class="learn-text reveal">
+          <span class="section-label" style="color:var(--kids-accent)">On &amp; Off the Mat</span>
+          <h2 id="learn-title">What Your Child Will Learn</h2>
+          <p>Jiu-jitsu teaches children far more than how to grapple. Every technique on the mat corresponds to a life skill off of it. A guard sweep teaches problem-solving. A reversal teaches resilience. Tapping out teaches humility.</p>
+          <p>By the time your child earns their first stripe, you'll already be noticing the difference — at home, at school, and in how they carry themselves.</p>
+        </div>
+        <div class="skills-diagram reveal" style="transition-delay:200ms">
+          <div class="skill-block"><div class="skill-icon">🤼</div><h4>Takedowns</h4><p>Wrestling-based entries and trips</p></div>
+          <div class="skill-block"><div class="skill-icon">🛡️</div><h4>Guard Work</h4><p>Positions, sweeps &amp; submissions</p></div>
+          <div class="skill-block"><div class="skill-icon">🏃</div><h4>Escapes</h4><p>Getting out of bad positions</p></div>
+          <div class="skill-block"><div class="skill-icon">🧠</div><h4>Discipline</h4><p>Focus, respect &amp; perseverance</p></div>
+          <div class="skill-block"><div class="skill-icon">💪</div><h4>Fitness</h4><p>Strength, agility &amp; coordination</p></div>
+          <div class="skill-block"><div class="skill-icon">🤝</div><h4>Teamwork</h4><p>Sportsmanship &amp; community</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section id="safety" aria-labelledby="safety-title">
+    <div class="container">
+      <div class="safety-layout">
+        <div class="safety-visual reveal">
+          <img src="assets/images/kids-jiu-jitsu/class-2.jpg" alt="Kids Jiu-Jitsu class at Prodigy with coach supervising rolling" loading="lazy" style="object-position: center top;" />
+          <div class="safety-badge-overlay"><span class="shield-icon">🛡️</span><span>Safety First</span></div>
+        </div>
+        <div class="reveal" style="transition-delay:200ms">
+          <span class="section-label" style="color:var(--kids-accent)">Parent Assurance</span>
+          <h2 id="safety-title">Safe, Supervised &amp; Expert-Led</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.5rem">We know safety is a parent's number one concern. Here's how we ensure every class is the right environment for your child.</p>
+          <div class="safety-points">
+            <div class="safety-point"><div class="safety-point-icon">👨‍🏫</div><div><h4>Certified, Background-Checked Instructors</h4><p>Every coach undergoes background checks and holds recognized BJJ certifications before they ever step on the mat with your child.</p></div></div>
+            <div class="safety-point"><div class="safety-point-icon">⚖️</div><div><h4>Age-Appropriate Sparring</h4><p>Sparring is always supervised, always controlled, and always matched by size and experience — never thrown into the deep end.</p></div></div>
+            <div class="safety-point"><div class="safety-point-icon">🎖️</div><div><h4>Structured Belt &amp; Stripe Progression</h4><p>Clear milestones keep children motivated. Each stripe earned represents real skill development and character growth.</p></div></div>
+            <div class="safety-point"><div class="safety-point-icon">✨</div><div><h4>Pristine, Well-Maintained Facility</h4><p>Our mats are cleaned before every class. We maintain the highest hygiene standards so parents can have complete peace of mind.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIDS SCHEDULE -->
+  <section id="kids-schedule" aria-labelledby="ks-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--kids-accent)">Class Times</span>
+        <h2 id="ks-title">Kids Weekly Schedule</h2>
+        <p>Monday through Saturday — afternoon and weekend classes to fit every family's schedule.</p>
+      </div>
+      <div class="kids-sched-grid reveal">
+        <div class="kids-sched-card"><div class="kids-sched-day">Monday</div><div class="kids-sched-class">Kids Advanced NoGi — 5:00–6:00 PM</div></div>
+        <div class="kids-sched-card"><div class="kids-sched-day">Tuesday</div><div class="kids-sched-class">Kids All Levels Gi — 5:00–6:00 PM</div></div>
+        <div class="kids-sched-card"><div class="kids-sched-day">Wednesday</div><div class="kids-sched-class">Kids Advanced Gi — 5:00–6:00 PM</div></div>
+        <div class="kids-sched-card"><div class="kids-sched-day">Thursday</div><div class="kids-sched-class">Kids All Levels NoGi — 5:00–6:00 PM</div></div>
+        <div class="kids-sched-card"><div class="kids-sched-day">Friday</div><div class="kids-sched-class">Kids Gi All Levels — 5:00–6:00 PM</div></div>
+        <div class="kids-sched-card" style="border-color:rgba(192,57,43,0.3)"><div class="kids-sched-day" style="color:var(--accent)">Saturday ⭐</div><div class="kids-sched-class">Kids Pro Comp Training Gi &amp; NoGi — 9:30 AM–12:30 PM<span class="comp-badge">Competition Track</span></div></div>
+      </div>
+      <div style="text-align:center;margin-top:1.5rem" class="reveal"><a href="schedule.html" class="btn btn-primary">View Full Schedule →</a></div>
+    </div>
+  </section>
+
+  <!-- COMPETITION CALLOUT -->
+  <section id="comp-callout" aria-label="Competition pathway">
+    <div class="container">
+      <div class="comp-banner reveal">
+        <div>
+          <span class="section-label">Saturday Pro Comp Training</span>
+          <h2>Is Your Child Ready to Compete?</h2>
+          <p>Our Saturday Kids Pro Comp Training class (9:30 AM–12:30 PM) is a 3-hour intensive session covering takedowns, guard work, competition rules, and match-pace drilling. Designed for motivated kids who want to test themselves at IBJJF and local tournaments.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem">Learn About the Competitive Track →</a>
+        </div>
+        <img src="assets/images/kids-jiu-jitsu/competition-1.jpg" alt="Young Prodigy Jiu-Jitsu student competing at IBJJF tournament" loading="lazy" class="comp-banner-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PARENT TESTIMONIALS -->
+  <section id="parent-testimonials" aria-labelledby="pt-title">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label" style="color:var(--kids-accent)">Parent Stories</span><h2 id="pt-title">What Parents Are Saying</h2><p>Real results from real families in the Prodigy community.</p></div>
+      <div class="parent-t-grid">
+        <article class="parent-t-card reveal"><div class="t-stars">★★★★★</div><p class="t-quote">My daughter started at 7 and the confidence she has now is incredible. She handles situations at school completely differently. The coaches here genuinely care about each child.</p><div class="t-author"><div class="t-avatar">S.T</div><div><div class="t-name">Sarah T.</div><div class="t-meta">Parent of 7-year-old · 14 months</div></div></div></article>
+        <article class="parent-t-card reveal" style="transition-delay:150ms"><div class="t-stars">★★★★★</div><p class="t-quote">My son was being bullied at school. Three months at Prodigy and the problem was resolved — not because he fought anyone, but because he stopped being afraid. Life changing.</p><div class="t-author"><div class="t-avatar">J.P</div><div><div class="t-name">James P.</div><div class="t-meta">Parent of 10-year-old · 8 months</div></div></div></article>
+        <article class="parent-t-card reveal" style="transition-delay:300ms"><div class="t-stars">★★★★★</div><p class="t-quote">Both my kids train here. The structure, the discipline, the community — it's become a cornerstone of our family routine. Their focus in school has improved dramatically.</p><div class="t-author"><div class="t-avatar">M.K</div><div><div class="t-name">Maria K.</div><div class="t-meta">Parent of 2 kids · 2 years</div></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:80px 0;background:var(--surface)" aria-labelledby="kfaq-title">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Questions</span><h2 id="kfaq-title">Parent FAQs</h2><p>Everything you want to know before enrolling your child.</p></div>
+      <div class="faq-list reveal" style="max-width:760px;margin:0 auto;transition-delay:200ms">
+        <div class="faq-item"><button class="faq-question">What age can my child start?<span class="faq-icon">+</span></button><div class="faq-answer"><p>We welcome children from age 5. Our Little Prodigies class (ages 5–7) is designed specifically for young children and focuses on fun, fundamentals, and building body awareness.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Is jiu-jitsu safe for young children?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Absolutely. All sparring is age-appropriate, supervised by certified coaches, and matched by size and experience. We have an excellent safety record and clean facilities.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How does the belt/stripe progression work?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Kids earn stripes on their white belt as they develop skills and demonstrate the right attitude. Each stripe is a meaningful milestone — not just a participation award.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Can my child compete in tournaments?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes — we support and prepare children for local and IBJJF-sanctioned tournaments. Competition is always optional and age-appropriate.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How does jiu-jitsu help with bullying?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Jiu-jitsu addresses bullying on two levels: the confidence it builds means children stop presenting as targets, and if a situation does escalate, they have the tools to safely handle it without panic.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="lead-form-section" aria-labelledby="kform-title">
+    <div class="container">
+      <div class="lead-inner">
+        <div class="lead-copy reveal">
+          <span class="section-label" style="color:var(--kids-accent)">Free First Class</span>
+          <h2 id="kform-title">The First Class Is On Us — See the Difference in Your Child.</h2>
+          <p>Join hundreds of families who've chosen Prodigy Jiu-Jitsu for their children.</p>
+          <ul class="lead-bullets">
+            <li class="lead-bullet">One free class, no obligation</li>
+            <li class="lead-bullet">All age groups welcome</li>
+            <li class="lead-bullet">Certified, caring coaches</li>
+            <li class="lead-bullet">Spots fill fast — reserve now</li>
+          </ul>
+        </div>
+        <div class="form-card reveal" style="transition-delay:200ms">
+          <h3>Reserve Your Child's Free Class</h3>
+          <p>Fill in the form and we'll reach out within 24 hours to confirm.</p>
+          <form id="kids-form" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Parent Name *</label><input type="text" id="name" name="name" placeholder="Your name" required /></div>
+              <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required /></div>
+            </div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="email@example.com" required /></div>
+            <div class="form-group"><label for="age-group">Child's Age Group *</label>
+              <select id="age-group" name="age-group"><option value="">Select age group...</option><option value="5-7">Little Prodigies (Ages 5–7)</option><option value="8-12">Youth Warriors (Ages 8–12)</option><option value="13-17">Teen Competitors (Ages 13–17)</option></select>
+            </div>
+            <div class="form-group"><label for="time">Preferred Class Time</label>
+              <select id="time" name="time"><option value="">Select preference...</option><option value="weekday">Weekday Afternoon (5–6 PM)</option><option value="saturday">Saturday Competition Training</option></select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-form">Book Free Kids Class →</button>
+            <p class="form-privacy">🔒 We respect your privacy. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="form-success" role="alert"><div class="checkmark-circle">✓</div><h3>You're All Set!</h3><p>We'll be in touch within 24 hours. Get your child ready to train!</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALSO EXPLORE -->
+  <section class="also-explore" aria-labelledby="explore-title">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Also Explore</span><h2 id="explore-title">More Programs at Prodigy</h2></div>
+      <div class="explore-cards">
+        <a href="adult-jiu-jitsu.html" class="explore-card reveal"><div class="explore-card-img" style="background-image:url('assets/images/adult-jiu-jitsu/gi-class-2.jpg')"></div><div class="explore-card-body"><h3>Adult Jiu-Jitsu</h3><p>Gi &amp; No-Gi classes for adults of all levels.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Explore →</span></div></a>
+        <a href="muay-thai.html" class="explore-card reveal" style="transition-delay:150ms"><div class="explore-card-img"><img src="assets/images/muay-thai/class-scene.jpg" alt="Muay Thai class in session at Prodigy Jiu-Jitsu" class="explore-card-img-cover" /></div><div class="explore-card-body"><h3>Muay Thai</h3><p>The Art of Eight Limbs — striking for all levels.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Explore →</span></div></a>
+        <a href="contact.html" class="explore-card reveal" style="transition-delay:300ms"><div class="explore-card-img" style="background-image:url('assets/images/contact/bg.jpg')"></div><div class="explore-card-body"><h3>Get Started Today</h3><p>Your child's first class is free. Reserve a spot today.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Book Free Class →</span></div></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Prodigy Jiu-Jitsu" /></a><p>Premier martial arts academy — Adult Jiu-Jitsu, Kids Jiu-Jitsu, and Muay Thai. All levels welcome.</p></div>
+      <nav class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+      <nav class="footer-col"><h4>Programs</h4><ul><li><a href="adult-jiu-jitsu.html">Adult Jiu-Jitsu</a></li><li><a href="kids-jiu-jitsu.html">Kids Jiu-Jitsu</a></li><li><a href="muay-thai.html">Muay Thai</a></li></ul></nav>
+      <address class="footer-col" style="font-style:normal"><h4>Contact</h4><div class="footer-contact-item"><span>📍</span><span>7720 Main St Unit #5<br>Fogelsville, PA 18051</span></div><div class="footer-contact-item"><span>📞</span><a href="tel:+14843504989">(484) 350-4989</a></div><div class="footer-contact-item"><span>✉️</span><a href="mailto:elizabeth@prodigyjiujitsu.com">elizabeth@prodigyjiujitsu.com</a></div></address>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Prodigy Jiu-Jitsu. All rights reserved.</p><p>Built with discipline. Powered by passion.</p></div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => { const o = hamburger.classList.toggle('open'); mobileMenu.classList.toggle('open', o); hamburger.setAttribute('aria-expanded', o); mobileMenu.setAttribute('aria-hidden', !o); document.body.style.overflow = o ? 'hidden' : ''; });
+const ro = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } }), { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+document.querySelectorAll('.faq-question').forEach(btn => btn.addEventListener('click', () => { const item = btn.closest('.faq-item'); const isOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!isOpen) item.classList.add('open'); }));
+const form = document.getElementById('kids-form');
+if (form) form.addEventListener('submit', e => { e.preventDefault(); const n=form.querySelector('#name').value.trim(),p=form.querySelector('#phone').value.trim(),em=form.querySelector('#email').value.trim(); if(!n||!p||!em)return; form.style.display='none'; document.getElementById('form-success').classList.add('show'); });
+</script>
+<script src="assets/js/free-class-modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adult Jiu-Jitsu Classes | Gi &amp; No-Gi BJJ Training — Prodigy Jiu-Jitsu</title>
+  <meta name="description" content="Join Prodigy Jiu-Jitsu's Adult BJJ program. Gi &amp; No-Gi classes for all levels — Fundamentals through Advanced. Expert coaching. Enroll today." />
+  <link rel="canonical" href="https://prodigyjiujitsu.com/adult-jiu-jitsu" />
+  <meta property="og:title" content="Adult Jiu-Jitsu Classes | Gi &amp; No-Gi BJJ Training — Prodigy Jiu-Jitsu" />
+  <meta property="og:image" content="https://prodigyjiujitsu.com/assets/images/adult-jiu-jitsu/gi-class-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://prodigyjiujitsu.com/"},{"@type":"ListItem","position":2,"name":"Programs","item":"https://prodigyjiujitsu.com/adult-jiu-jitsu"},{"@type":"ListItem","position":3,"name":"Adult Jiu-Jitsu","item":"https://prodigyjiujitsu.com/adult-jiu-jitsu"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .ajj-hero .page-hero-bg { background-image: url('assets/images/adult-jiu-jitsu/gi-class-1.jpg'); background-position: center 35%; }
+    .ajj-hero { min-height: 70vh; }
+    .ajj-hero .page-hero-content { padding-left: 3rem; }
+    @media (max-width: 768px) { .ajj-hero .page-hero-content { padding-left: 1rem; } }
+
+    /* BENEFITS */
+    #ajj-benefits { padding: 100px 0; background: var(--bg); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .benefit-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 2rem; transition: transform 0.3s var(--ease), border-color 0.3s; }
+    .benefit-card:hover { transform: translateY(-6px); border-color: rgba(192,57,43,0.3); }
+    .benefit-icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .benefit-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .benefit-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* CURRICULUM */
+    #curriculum { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .curriculum-timeline { max-width: 700px; margin: 3rem auto 0; position: relative; }
+    .curriculum-timeline::before { content: ''; position: absolute; left: 28px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent), rgba(192,57,43,0.1)); }
+    .curriculum-step { display: flex; gap: 2rem; margin-bottom: 3rem; position: relative; }
+    .curriculum-step:last-child { margin-bottom: 0; }
+    .step-number { width: 56px; height: 56px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 900; flex-shrink: 0; position: relative; z-index: 1; box-shadow: 0 0 20px rgba(192,57,43,0.4); }
+    .step-body h3 { font-size: 1.5rem; margin-bottom: 0.5rem; padding-top: 0.75rem; }
+    .step-body p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
+    .step-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+    .step-tag { font-size: 0.72rem; padding: 0.25rem 0.65rem; border-radius: 100px; background: rgba(192,57,43,0.1); color: var(--accent); border: 1px solid rgba(192,57,43,0.25); font-weight: 500; }
+
+    /* GI vs NOGI */
+    #gi-nogi { padding: 100px 0; background: var(--bg); }
+    .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+    .comparison-card { border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); transition: border-color 0.3s, transform 0.3s var(--ease); }
+    .comparison-card:hover { border-color: rgba(192,57,43,0.4); transform: translateY(-6px); }
+    .comparison-img { height: 260px; overflow: hidden; }
+    .comparison-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+    .comparison-card:hover .comparison-img img { transform: scale(1.05); }
+    .comparison-body { background: var(--surface); padding: 2rem; }
+    .comparison-badge { display: inline-block; padding: 0.3rem 0.85rem; border-radius: 4px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
+    .badge-gi { background: rgba(0,80,180,0.2); color: #4a9eff; border: 1px solid rgba(0,100,220,0.3); }
+    .badge-nogi { background: rgba(192,57,43,0.15); color: var(--accent); border: 1px solid rgba(192,57,43,0.3); }
+    .comparison-body h3 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+    .comparison-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .comparison-list li { font-size: 0.85rem; color: var(--text-muted); display: flex; gap: 0.6rem; align-items: flex-start; }
+    .comparison-list li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+
+    /* SCHEDULE SUBSET */
+    #ajj-schedule { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .sched-mini-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2.5rem 0; }
+    .sched-mini-card { background: var(--bg); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 1.25rem; transition: border-color 0.2s; }
+    .sched-mini-card:hover { border-color: rgba(192,57,43,0.35); }
+    .sched-mini-day { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+    .sched-mini-class { font-size: 0.78rem; color: var(--text-muted); padding: 0.35rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .sched-mini-class:last-child { border-bottom: none; }
+    .level-badge { display: inline-block; font-size: 0.65rem; padding: 0.15rem 0.5rem; border-radius: 3px; background: rgba(192,57,43,0.12); color: var(--accent); border: 1px solid rgba(192,57,43,0.2); margin-left: 0.4rem; vertical-align: middle; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* INSTRUCTOR */
+    #ajj-instructor { padding: 100px 0; background: var(--bg); }
+    .instructor-layout { display: grid; grid-template-columns: 340px 1fr; gap: 5rem; align-items: center; }
+    .instructor-photo { position: relative; }
+    .instructor-photo img { width: 100%; height: 420px; object-fit: cover; object-position: center top; border-radius: 12px; border: 1px solid rgba(255,255,255,0.07); box-shadow: 0 24px 60px rgba(0,0,0,0.5); transition: transform 0.4s var(--ease); }
+    .instructor-photo:hover img { transform: scale(1.02) rotate3d(0, 1, 0, 3deg); }
+    .instructor-photo .coach-belt { position: absolute; bottom: 1.25rem; left: 1.25rem; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 100px; padding: 0.35rem 1rem; font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+    .instructor-info h2 { font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 0.5rem; }
+    .instructor-info .coach-title { font-size: 0.9rem; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; margin-bottom: 1.5rem; display: block; }
+    .instructor-info p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem; font-size: 0.95rem; }
+    .instructor-quote { border-left: 3px solid var(--accent); padding-left: 1.25rem; margin: 1.5rem 0; font-style: italic; color: rgba(255,255,255,0.8); font-size: 1rem; line-height: 1.7; }
+
+    /* TESTIMONIALS */
+    #ajj-testimonials { padding: 80px 0; background: var(--surface); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+    .testimonial-card { background: var(--bg); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 2rem; }
+    .t-stars { color: #f0b429; font-size: 1rem; margin-bottom: 1rem; }
+    .t-quote { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
+    .t-author { display: flex; align-items: center; gap: 0.75rem; }
+    .t-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 800; flex-shrink: 0; }
+    .t-name { font-weight: 600; font-size: 0.88rem; }
+    .t-meta { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* FAQ */
+    #ajj-faq { padding: 80px 0; background: var(--bg); }
+    .faq-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start; }
+    .faq-intro h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); margin-bottom: 1rem; }
+    .faq-intro p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
+
+    @media (max-width: 1024px) {
+      .instructor-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .instructor-photo img { height: 340px; }
+      .faq-layout { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    @media (max-width: 768px) {
+      .benefits-grid { grid-template-columns: 1fr 1fr; }
+      .comparison-grid { grid-template-columns: 1fr; }
+      .sched-mini-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .benefits-grid { grid-template-columns: 1fr; }
+      .sched-mini-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav id="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Prodigy Jiu-Jitsu home">
+        <img src="assets/images/logo.png" alt="Prodigy Jiu-Jitsu" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="active">Programs</a>
+          <div class="dropdown-menu">
+            <a href="adult-jiu-jitsu.html" class="dropdown-card"><div class="dropdown-icon">🥋</div><h4>Adult Jiu-Jitsu</h4><p>Gi &amp; No-Gi for all levels.</p></a>
+            <a href="kids-jiu-jitsu.html" class="dropdown-card"><div class="dropdown-icon">👦</div><h4>Kids Jiu-Jitsu</h4><p>Ages 5–17. Confidence &amp; discipline.</p></a>
+            <a href="muay-thai.html" class="dropdown-card"><div class="dropdown-icon">🥊</div><h4>Muay Thai</h4><p>The Art of Eight Limbs.</p></a>
+          </div>
+        </li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Free Class →</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="#" style="pointer-events:none;color:var(--text-muted)">Programs</a>
+    <div class="mobile-submenu"><a href="adult-jiu-jitsu.html">→ Adult Jiu-Jitsu</a><a href="kids-jiu-jitsu.html">→ Kids Jiu-Jitsu</a><a href="muay-thai.html">→ Muay Thai</a></div>
+    <a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Book Your Free Class →</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero ajj-hero" aria-label="Adult Jiu-Jitsu hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="#">Programs</a><span>/</span><span>Adult Jiu-Jitsu</span></nav>
+      <span class="section-label">Adult Program</span>
+      <h1>Master the Gentle Art.<br><em style="color:var(--accent);font-style:normal">Dominate</em> on the Mat.</h1>
+      <p class="hero-sub">Structured Adult BJJ classes in Gi, No-Gi, and Wrestling for Jiu-Jitsu — designed for all experience levels, from day one to black belt.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-primary">Start Your Free Trial →</a>
+        <a href="#ajj-schedule" class="btn btn-secondary">View Schedule</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="ajj-benefits" aria-labelledby="benefits-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Train BJJ</span>
+        <h2 id="benefits-title">Why Adult Jiu-Jitsu?</h2>
+        <p>Jiu-jitsu is more than a sport — it's a complete system for physical and mental development.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal" style="transition-delay:0ms"><div class="benefit-icon">🛡️</div><h3>Self-Defense</h3><p>Learn practical, battle-tested techniques proven to work against larger opponents in real-world situations.</p></div>
+        <div class="benefit-card reveal" style="transition-delay:80ms"><div class="benefit-icon">💪</div><h3>Full-Body Fitness</h3><p>Jiu-jitsu is one of the most complete physical workouts available — strength, cardio, flexibility, and coordination.</p></div>
+        <div class="benefit-card reveal" style="transition-delay:160ms"><div class="benefit-icon">🧠</div><h3>Mental Sharpness</h3><p>Often called "human chess," BJJ demands constant problem-solving that sharpens the mind as much as the body.</p></div>
+        <div class="benefit-card reveal" style="transition-delay:240ms"><div class="benefit-icon">🤝</div><h3>Community</h3><p>Train alongside a welcoming group of people from all walks of life, united by a shared love of the art.</p></div>
+        <div class="benefit-card reveal" style="transition-delay:320ms"><div class="benefit-icon">🏆</div><h3>Competition Path</h3><p>From local tournaments to IBJJF events — we prepare and support students who want to test their skills.</p></div>
+        <div class="benefit-card reveal" style="transition-delay:400ms"><div class="benefit-icon">🧘</div><h3>Stress Relief</h3><p>There is no better way to decompress than an hour on the mat. Jiu-jitsu demands your full presence — nothing else exists.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section id="curriculum" aria-labelledby="curriculum-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Your Journey</span>
+        <h2 id="curriculum-title">Our Adult BJJ Curriculum</h2>
+        <p>A structured path from your first day on the mat to advanced competition-level technique.</p>
+      </div>
+      <div class="curriculum-timeline reveal">
+        <div class="curriculum-step">
+          <div class="step-number">1</div>
+          <div class="step-body">
+            <h3>Fundamentals / All Levels</h3>
+            <p>The perfect entry point for new students. We cover the core positions — guard, mount, side control, back — along with essential escapes, sweeps, and submissions. No experience needed.</p>
+            <div class="step-tags"><span class="step-tag">Guard Basics</span><span class="step-tag">Escapes</span><span class="step-tag">Takedowns</span><span class="step-tag">Submissions</span></div>
+          </div>
+        </div>
+        <div class="curriculum-step">
+          <div class="step-number">2</div>
+          <div class="step-body">
+            <h3>All Levels Gi &amp; No-Gi</h3>
+            <p>Develop your game with combination sequences, transitions, and an introduction to competition concepts. Classes mix all levels for dynamic training that exposes you to different styles.</p>
+            <div class="step-tags"><span class="step-tag">Guard Passing</span><span class="step-tag">Chains</span><span class="step-tag">Wrestling</span><span class="step-tag">Live Rolling</span></div>
+          </div>
+        </div>
+        <div class="curriculum-step">
+          <div class="step-number">3</div>
+          <div class="step-body">
+            <h3>Advanced</h3>
+            <p>For experienced students and competitors. Advanced guard systems, leg lock entries, competition-level drilling, and high-intensity sparring rounds with structured feedback.</p>
+            <div class="step-tags"><span class="step-tag">Advanced Guards</span><span class="step-tag">Leg Locks</span><span class="step-tag">Competition Prep</span><span class="step-tag">IBJJF Rules</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GI vs NOGI -->
+  <section id="gi-nogi" aria-labelledby="ginogi-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Choose Your Style</span>
+        <h2 id="ginogi-title">Gi vs. No-Gi: Which Is Right for You?</h2>
+        <p>We offer both — and many members train both. Here's what makes each unique.</p>
+      </div>
+      <div class="comparison-grid">
+        <div class="comparison-card reveal">
+          <div class="comparison-img"><img src="assets/images/adult-jiu-jitsu/gi-class-2.jpg" alt="Two female students sparring in black Gi at Prodigy Jiu-Jitsu" loading="lazy" /></div>
+          <div class="comparison-body">
+            <span class="comparison-badge badge-gi">Gi Jiu-Jitsu</span>
+            <h3>The Traditional Art</h3>
+            <ul class="comparison-list">
+              <li>Wear the traditional kimono uniform</li>
+              <li>Grip-intensive — use the fabric as a tool</li>
+              <li>Slower, more methodical pace</li>
+              <li>IBJJF competition format</li>
+              <li>Deep positional detail and nuance</li>
+            </ul>
+            <a href="schedule.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.65rem 1.25rem">See Gi Class Times →</a>
+          </div>
+        </div>
+        <div class="comparison-card reveal" style="transition-delay:200ms">
+          <div class="comparison-img"><img src="assets/images/adult-jiu-jitsu/nogi-class.jpg" alt="Adult students drilling No-Gi jiu-jitsu techniques at Prodigy Jiu-Jitsu with logo visible" loading="lazy" /></div>
+          <div class="comparison-body">
+            <span class="comparison-badge badge-nogi">No-Gi Jiu-Jitsu</span>
+            <h3>Dynamic &amp; Fast-Paced</h3>
+            <ul class="comparison-list">
+              <li>Shorts and rashguard — no uniform grips</li>
+              <li>Faster, more explosive pace</li>
+              <li>Direct MMA and self-defense application</li>
+              <li>ADCC / submission wrestling formats</li>
+              <li>Wrestling integration essential</li>
+            </ul>
+            <a href="schedule.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.65rem 1.25rem">See No-Gi Class Times →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE SUBSET -->
+  <section id="ajj-schedule" aria-labelledby="ajj-sched-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Class Times</span>
+        <h2 id="ajj-sched-title">Adult BJJ Weekly Schedule</h2>
+        <p>Morning and evening classes available Monday through Sunday.</p>
+      </div>
+      <div class="sched-mini-grid reveal">
+        <div class="sched-mini-card"><div class="sched-mini-day">Monday</div><div class="sched-mini-class">NoGi All Levels — 9:00 AM<span class="level-badge">All Levels</span></div><div class="sched-mini-class">NoGi All Levels — 6:15 PM<span class="level-badge">All Levels</span></div></div>
+        <div class="sched-mini-card"><div class="sched-mini-day">Tuesday</div><div class="sched-mini-class">Wrestling For BJJ — 7:00 AM<span class="level-badge">All Levels</span></div><div class="sched-mini-class">Gi All Levels — 9:00 AM</div><div class="sched-mini-class">Gi All Levels — 6:15 PM</div></div>
+        <div class="sched-mini-card"><div class="sched-mini-day">Wednesday</div><div class="sched-mini-class">NoGi All Levels — 9:00 AM</div><div class="sched-mini-class">Fundamentals NoGi — 6:00 PM<span class="level-badge">Beginner</span></div><div class="sched-mini-class">Advanced NoGi — 7:00 PM<span class="level-badge">Advanced</span></div></div>
+        <div class="sched-mini-card"><div class="sched-mini-day">Thursday</div><div class="sched-mini-class">Gi All Levels — 9:00 AM</div><div class="sched-mini-class">Advanced Gi — 6:00 PM<span class="level-badge">Advanced</span></div></div>
+        <div class="sched-mini-card"><div class="sched-mini-day">Friday</div><div class="sched-mini-class">NoGi All Levels — 9:00 AM</div><div class="sched-mini-class">NoGi All Levels — 6:15 PM</div></div>
+        <div class="sched-mini-card"><div class="sched-mini-day">Saturday</div><div class="sched-mini-class">Gi All Levels — 8:00 AM</div></div>
+        <div class="sched-mini-card"><div class="sched-mini-day">Sunday</div><div class="sched-mini-class">NoGi All Levels — 9:00 AM</div></div>
+      </div>
+      <div style="text-align:center" class="reveal"><a href="schedule.html" class="btn btn-primary">View Full Schedule →</a></div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR -->
+  <section id="ajj-instructor" aria-labelledby="instructor-title">
+    <div class="container">
+      <div class="instructor-layout">
+        <div class="instructor-photo reveal">
+          <img src="assets/images/about/coach-jeremy.jpg" alt="Coach Jeremy Lee Henderson — Head BJJ Instructor at Prodigy Jiu-Jitsu, standing in front of the academy logo" loading="lazy" style="object-position: 25% center;" />
+          <span class="coach-belt">Black Belt — Head Instructor</span>
+        </div>
+        <div class="instructor-info reveal" style="transition-delay:200ms">
+          <span class="section-label">Your Lead Coach</span>
+          <h2 id="instructor-title">Jeremy Lee Henderson</h2>
+          <span class="coach-title">Head BJJ Instructor</span>
+          <p>Coach Jeremy brings a lifetime of dedication to Brazilian Jiu-Jitsu — as a competitor, an instructor, and a leader in the local martial arts community. His teaching style balances technical depth with genuine accessibility, ensuring every student — beginner or advanced — gets meaningful development every class.</p>
+          <blockquote class="instructor-quote">"Jiu-jitsu doesn't care about your size, your age, or your background. It only cares about how hard you're willing to work. That's what makes it the great equalizer."</blockquote>
+          <a href="about.html#coaches" class="btn btn-secondary">Meet All Coaches →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="ajj-testimonials" aria-labelledby="t-title">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Member Stories</span><h2 id="t-title">What Members Say</h2></div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal"><div class="t-stars">★★★★★</div><p class="t-quote">Six months in and I've already competed in my first tournament. The coaches here take your development personally. Best decision I've ever made.</p><div class="t-author"><div class="t-avatar">M.R</div><div><div class="t-name">Marcus R.</div><div class="t-meta">Adult BJJ · 6 months</div></div></div></article>
+        <article class="testimonial-card reveal" style="transition-delay:150ms"><div class="t-stars">★★★★★</div><p class="t-quote">I train both Gi and No-Gi here and the level of instruction is unreal. There's always something new to learn and the teammates push you to be better every round.</p><div class="t-author"><div class="t-avatar">A.M</div><div><div class="t-name">Alexis M.</div><div class="t-meta">Adult BJJ · 2 years</div></div></div></article>
+        <article class="testimonial-card reveal" style="transition-delay:300ms"><div class="t-stars">★★★★★</div><p class="t-quote">I came in with zero experience at 42 years old. Everyone was welcoming. Now I'm rolling 4 days a week and I've never felt better in my life.</p><div class="t-author"><div class="t-avatar">T.W</div><div><div class="t-name">Tom W.</div><div class="t-meta">Adult BJJ · 14 months</div></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="ajj-faq" aria-labelledby="faq-title" style="padding:80px 0;background:var(--surface)">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-intro reveal"><span class="section-label">Questions</span><h2 id="faq-title">Adult BJJ FAQs</h2><p>Everything you need to know before stepping on the mat for the first time.</p></div>
+        <div class="faq-list reveal" style="transition-delay:200ms">
+          <div class="faq-item"><button class="faq-question">Do I need any prior experience?<span class="faq-icon">+</span></button><div class="faq-answer"><p>None at all. Our Fundamentals and All Levels classes are specifically designed to welcome complete beginners. Every black belt started exactly where you are now.</p></div></div>
+          <div class="faq-item"><button class="faq-question">What's the difference between Gi and No-Gi?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Gi training uses the traditional kimono uniform and allows gripping the fabric. No-Gi uses shorts and rashguards, is faster-paced, and is more directly applicable to MMA and wrestling.</p></div></div>
+          <div class="faq-item"><button class="faq-question">How long does it take to earn a blue belt?<span class="faq-icon">+</span></button><div class="faq-answer"><p>It varies by individual, but most dedicated students earn their blue belt within 1–2 years of consistent training. Promotions are based on skill, knowledge, and mat time — not a fixed timeline.</p></div></div>
+          <div class="faq-item"><button class="faq-question">Can I compete if I join?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Absolutely. We actively support competitors at local, regional, and national events including IBJJF tournaments. Competition is optional — many of our members train purely for fitness and enjoyment.</p></div></div>
+          <div class="faq-item"><button class="faq-question">What should I wear to my first class?<span class="faq-icon">+</span></button><div class="faq-answer"><p>For your first class, comfortable athletic clothing (shorts and a t-shirt or rashguard) is perfectly fine. If you decide to continue, we'll guide you on purchasing the right gear.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="lead-form-section" aria-labelledby="form-title">
+    <div class="container">
+      <div class="lead-inner">
+        <div class="lead-copy reveal">
+          <span class="section-label">Free First Class</span>
+          <h2 id="form-title">Your First Class Is Free — No Experience Needed.</h2>
+          <p>Take the first step. Our coaches will handle the rest.</p>
+          <ul class="lead-bullets">
+            <li class="lead-bullet">One free class, zero obligation</li>
+            <li class="lead-bullet">Expert coaching from day one</li>
+            <li class="lead-bullet">Gi &amp; No-Gi classes available</li>
+            <li class="lead-bullet">New classes forming now — limited spots</li>
+          </ul>
+        </div>
+        <div class="form-card reveal" style="transition-delay:200ms">
+          <h3>Claim Your Free BJJ Class</h3>
+          <p>Fill in your details and we'll reach out within 24 hours.</p>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="John Smith" required /></div>
+              <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required /></div>
+            </div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="john@example.com" required /></div>
+            <div class="form-group"><label for="program">Program Interest</label>
+              <select id="program" name="program"><option value="adult-gi" selected>Adult Gi Jiu-Jitsu</option><option value="adult-nogi">Adult No-Gi Jiu-Jitsu</option><option value="kids">Kids Jiu-Jitsu</option><option value="muay-thai">Muay Thai</option><option value="unsure">Not Sure Yet</option></select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-form">Claim Free Class →</button>
+            <p class="form-privacy">🔒 We respect your privacy. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="form-success" role="alert"><div class="checkmark-circle">✓</div><h3>You're All Set!</h3><p>We'll be in touch within 24 hours — get ready to train!</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALSO EXPLORE -->
+  <section class="also-explore" aria-labelledby="explore-title">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Also Explore</span><h2 id="explore-title">More Programs at Prodigy</h2></div>
+      <div class="explore-cards">
+        <a href="kids-jiu-jitsu.html" class="explore-card reveal"><div class="explore-card-img" style="background-image:url('assets/images/kids-jiu-jitsu/combat.jpg')"></div><div class="explore-card-body"><h3>Kids Jiu-Jitsu</h3><p>Ages 5–17. Build confidence, discipline &amp; self-defense.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Explore →</span></div></a>
+        <a href="muay-thai.html" class="explore-card reveal" style="transition-delay:150ms"><div class="explore-card-img"><img src="assets/images/muay-thai/class-scene.jpg" alt="Muay Thai class in session at Prodigy Jiu-Jitsu" class="explore-card-img-cover" /></div><div class="explore-card-body"><h3>Muay Thai</h3><p>Striking for fitness, self-defense, and competition.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Explore →</span></div></a>
+        <a href="contact.html" class="explore-card reveal" style="transition-delay:300ms"><div class="explore-card-img" style="background-image:url('assets/images/contact/bg.jpg')"></div><div class="explore-card-body"><h3>Get Started Today</h3><p>Your first class is free. No experience needed — just show up.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Book Free Class →</span></div></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo" aria-label="Prodigy Jiu-Jitsu"><img src="assets/images/logo.png" alt="Prodigy Jiu-Jitsu" style="height:44px;width:auto;" /></a><p>Premier martial arts academy offering Adult Jiu-Jitsu, Kids Jiu-Jitsu, and Muay Thai.</p><div class="footer-socials"><a href="https://www.instagram.com/prodigy_jiujitsupa" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+      <nav class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+      <nav class="footer-col"><h4>Programs</h4><ul><li><a href="adult-jiu-jitsu.html">Adult Jiu-Jitsu</a></li><li><a href="kids-jiu-jitsu.html">Kids Jiu-Jitsu</a></li><li><a href="muay-thai.html">Muay Thai</a></li></ul></nav>
+      <address class="footer-col" style="font-style:normal"><h4>Contact</h4><div class="footer-contact-item"><span>📍</span><span>7720 Main St Unit #5<br>Fogelsville, PA 18051</span></div><div class="footer-contact-item"><span>📞</span><a href="tel:+14843504989">(484) 350-4989</a></div><div class="footer-contact-item"><span>✉️</span><a href="mailto:elizabeth@prodigyjiujitsu.com">elizabeth@prodigyjiujitsu.com</a></div></address>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Prodigy Jiu-Jitsu. All rights reserved.</p><p>Built with discipline. Powered by passion.</p></div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => { const o = hamburger.classList.toggle('open'); mobileMenu.classList.toggle('open', o); hamburger.setAttribute('aria-expanded', o); mobileMenu.setAttribute('aria-hidden', !o); document.body.style.overflow = o ? 'hidden' : ''; });
+const ro = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } }), { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+document.querySelectorAll('.faq-question').forEach(btn => btn.addEventListener('click', () => { const item = btn.closest('.faq-item'); const isOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!isOpen) item.classList.add('open'); }));
+const form = document.getElementById('contact-form');
+if (form) form.addEventListener('submit', e => { e.preventDefault(); const n=form.querySelector('#name').value.trim(),p=form.querySelector('#phone').value.trim(),em=form.querySelector('#email').value.trim(); if(!n||!p||!em){[['name',n],['phone',p],['email',em]].forEach(([id,v])=>{ const el=document.getElementById(id); el.style.borderColor=v?'':'#e74c3c'; }); return; } form.style.display='none'; document.getElementById('form-success').classList.add('show'); });
+</script>
+<script src="assets/js/free-class-modal.js"></script>
+</body>
+</html>

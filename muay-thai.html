@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adult Muay Thai Classes | Striking, Fitness &amp; Fight Training — Prodigy Jiu-Jitsu</title>
+  <meta name="description" content="Train Muay Thai at Prodigy Jiu-Jitsu. Expert striking instruction in punches, elbows, knees &amp; kicks. Classes for fitness &amp; competition. Try your first class free." />
+  <link rel="canonical" href="https://prodigyjiujitsu.com/muay-thai" />
+  <meta property="og:title" content="Adult Muay Thai Classes | Striking, Fitness &amp; Fight Training — Prodigy Jiu-Jitsu" />
+  <meta property="og:image" content="https://prodigyjiujitsu.com/assets/images/muay-thai/training-2.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://prodigyjiujitsu.com/"},{"@type":"ListItem","position":2,"name":"Programs"},{"@type":"ListItem","position":3,"name":"Muay Thai","item":"https://prodigyjiujitsu.com/muay-thai"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    :root { --mt-gold: #d4a017; --mt-glow: rgba(212,160,23,0.3); }
+    .mt-hero .page-hero-bg { background-image: url('assets/images/muay-thai/training-1.jpg'); background-position: center 20%; }
+    .mt-hero { min-height: 75vh; }
+    .mt-hero h1 { font-size: clamp(3rem, 8vw, 7rem); }
+    .mt-hero .page-hero-content { padding-left: 3rem; }
+    @media (max-width: 768px) { .mt-hero .page-hero-content { padding-left: 1rem; } }
+
+    /* INTRO */
+    #mt-intro { padding: 100px 0; background: var(--bg); }
+    .intro-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .intro-text h2 { font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 1.25rem; }
+    .intro-text p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem; font-size: 0.95rem; }
+    .intro-text p strong { color: var(--mt-gold); }
+    .intro-img img { width: 100%; height: 460px; object-fit: cover; object-position: center top; border-radius: 12px; border: 1px solid rgba(255,255,255,0.07); box-shadow: 0 24px 60px rgba(0,0,0,0.5); transition: transform 0.5s var(--ease); }
+    .intro-img:hover img { transform: scale(1.02); }
+    .mt-divider { height: 2px; background: linear-gradient(to right, var(--mt-gold), transparent); margin: 2rem 0; max-width: 200px; }
+
+    /* EIGHT WEAPONS */
+    #eight-weapons { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .weapons-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .weapon-card { background: var(--bg); border: 1px solid rgba(212,160,23,0.12); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; transition: transform 0.3s var(--ease), border-color 0.4s, box-shadow 0.4s; }
+    .weapon-card:hover { transform: translateY(-8px); border-color: rgba(212,160,23,0.5); box-shadow: 0 0 30px rgba(212,160,23,0.12); }
+    .weapon-emoji { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+    .weapon-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--mt-gold); }
+    .weapon-techniques { display: flex; flex-wrap: wrap; gap: 0.35rem; justify-content: center; margin-top: 0.75rem; }
+    .weapon-technique { font-size: 0.7rem; color: var(--text-muted); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 100px; padding: 0.2rem 0.5rem; }
+
+    /* WHO IS IT FOR */
+    #who-for { padding: 100px 0; background: var(--bg); }
+    .who-for-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+    .who-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 2.5rem; transition: transform 0.35s var(--ease), border-color 0.35s, box-shadow 0.35s; }
+    .who-card:hover { transform: translateY(-6px); border-color: rgba(212,160,23,0.4); box-shadow: 0 0 40px rgba(212,160,23,0.08); }
+    .who-card-icon { font-size: 2.5rem; margin-bottom: 1.25rem; display: block; }
+    .who-card h3 { font-size: 1.7rem; margin-bottom: 0.75rem; }
+    .who-card p { color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .who-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.75rem; }
+    .who-list li { font-size: 0.85rem; color: var(--text-muted); display: flex; gap: 0.6rem; }
+    .who-list li::before { content: '→'; color: var(--mt-gold); flex-shrink: 0; }
+
+    /* CLASS STRUCTURE */
+    #class-structure { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .structure-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-top: 3rem; position: relative; }
+    .structure-steps::before { content: ''; position: absolute; top: 36px; left: 10%; right: 10%; height: 2px; background: linear-gradient(to right, var(--mt-gold), rgba(212,160,23,0.2)); }
+    .structure-step { text-align: center; padding: 0 0.75rem; position: relative; z-index: 1; }
+    .step-circle { width: 72px; height: 72px; border-radius: 50%; background: var(--bg); border: 2px solid var(--mt-gold); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 1rem; box-shadow: 0 0 20px rgba(212,160,23,0.2); transition: box-shadow 0.3s, transform 0.3s var(--ease); }
+    .structure-step:hover .step-circle { box-shadow: 0 0 35px rgba(212,160,23,0.5); transform: scale(1.1); }
+    .structure-step h4 { font-size: 1rem; margin-bottom: 0.35rem; }
+    .structure-step p { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* MMA CALLOUT */
+    #mma-callout { padding: 80px 0; background: var(--bg); }
+    .mma-banner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; background: var(--surface); border: 1px solid rgba(212,160,23,0.15); border-radius: 16px; padding: 3rem; overflow: hidden; position: relative; }
+    .mma-banner::before { content: ''; position: absolute; top: -40%; right: -5%; width: 50%; height: 200%; background: radial-gradient(ellipse, rgba(212,160,23,0.06) 0%, transparent 70%); }
+    .mma-banner h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); margin-bottom: 1rem; }
+    .mma-banner h2 em { font-style: normal; color: var(--mt-gold); }
+    .mma-banner p { color: var(--text-muted); line-height: 1.75; margin-bottom: 1.25rem; font-size: 0.9rem; }
+    .mma-banner img { width: 100%; height: 320px; object-fit: cover; object-position: center top; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); }
+
+    /* STATS */
+    #mt-stats { padding: 80px 0; background: #050505; }
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+    .stat-block { text-align: center; }
+    .stat-value { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; color: var(--mt-gold); line-height: 1; margin-bottom: 0.35rem; }
+    .stat-label { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* SCHEDULE */
+    #mt-schedule { padding: 100px 0; background: var(--surface); clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%); margin: -4vw 0; padding-top: calc(4vw + 100px); padding-bottom: calc(4vw + 100px); }
+    .mt-sched-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin: 2.5rem 0; }
+    .mt-sched-card { background: var(--bg); border: 1px solid rgba(212,160,23,0.15); border-radius: 10px; padding: 1.5rem; text-align: center; transition: border-color 0.2s, transform 0.3s var(--ease); }
+    .mt-sched-card:hover { border-color: rgba(212,160,23,0.5); transform: translateY(-4px); }
+    .mt-sched-day { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mt-gold); margin-bottom: 0.5rem; }
+    .mt-sched-time { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 0.25rem; }
+    .mt-sched-name { font-size: 0.78rem; color: var(--text-muted); }
+
+    /* INSTRUCTOR */
+    #mt-instructor { padding: 100px 0; background: var(--bg); }
+
+    /* FAQ */
+    #mt-faq { padding: 80px 0; background: var(--surface); }
+
+    @media (max-width: 1024px) {
+      .weapons-grid { grid-template-columns: repeat(2, 1fr); }
+      .structure-steps { grid-template-columns: 1fr 1fr; }
+      .structure-steps::before { display: none; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+      .mma-banner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .intro-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .who-for-grid { grid-template-columns: 1fr; }
+      .mt-sched-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .weapons-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav id="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Prodigy Jiu-Jitsu home">
+        <img src="assets/images/logo.png" alt="Prodigy Jiu-Jitsu" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li class="nav-dropdown"><a href="#" class="active">Programs</a>
+          <div class="dropdown-menu">
+            <a href="adult-jiu-jitsu.html" class="dropdown-card"><div class="dropdown-icon">🥋</div><h4>Adult Jiu-Jitsu</h4><p>Gi &amp; No-Gi for all levels.</p></a>
+            <a href="kids-jiu-jitsu.html" class="dropdown-card"><div class="dropdown-icon">👦</div><h4>Kids Jiu-Jitsu</h4><p>Ages 5–17. Confidence &amp; discipline.</p></a>
+            <a href="muay-thai.html" class="dropdown-card"><div class="dropdown-icon">🥊</div><h4>Muay Thai</h4><p>The Art of Eight Limbs.</p></a>
+          </div>
+        </li>
+        <li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Free Class →</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="#" style="pointer-events:none;color:var(--text-muted)">Programs</a>
+    <div class="mobile-submenu"><a href="adult-jiu-jitsu.html">→ Adult Jiu-Jitsu</a><a href="kids-jiu-jitsu.html">→ Kids Jiu-Jitsu</a><a href="muay-thai.html">→ Muay Thai</a></div>
+    <a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Book Your Free Class →</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero mt-hero" aria-label="Muay Thai hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay" style="background:linear-gradient(to bottom,rgba(10,10,10,0.5) 0%,rgba(10,10,10,0.75) 55%,rgba(10,10,10,1) 100%)"></div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="#">Programs</a><span>/</span><span>Muay Thai</span></nav>
+      <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(212,160,23,0.12);border:1px solid rgba(212,160,23,0.35);border-radius:100px;padding:0.4rem 1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--mt-gold);margin-bottom:1.25rem">The Art of Eight Limbs</div>
+      <h1>Strike Harder.<br>Move Smarter.<br><em style="color:var(--accent);font-style:normal">Train Like</em> a Fighter.</h1>
+      <p class="hero-sub">Elite striking skills through authentic Thai boxing methodology — for fitness, self-defense, and competition. All levels welcome.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-primary">Claim Your Free Muay Thai Class →</a>
+        <a href="#mt-schedule" class="btn btn-secondary">View Schedule</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section id="mt-intro" aria-labelledby="mt-intro-title">
+    <div class="container">
+      <div class="intro-layout">
+        <div class="intro-text reveal">
+          <span class="section-label" style="color:var(--mt-gold)">The Art</span>
+          <h2 id="mt-intro-title">What Is Muay Thai?</h2>
+          <div class="mt-divider"></div>
+          <p>Muay Thai — <strong>the Art of Eight Limbs</strong> — is Thailand's national combat sport and one of the most effective striking systems on earth. Where most striking arts use two weapons (hands and feet), Muay Thai utilizes eight: fists, elbows, knees, and kicks.</p>
+          <p>This is what many people search for when they look for kickboxing classes — and Muay Thai delivers it at a higher, more complete level. Whether your goal is elite fitness, real self-defense capability, or stepping into MMA or competitive Muay Thai, this is where you start.</p>
+          <p>No prior experience required. Every class is open to all levels.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem">Try Your First Class Free →</a>
+        </div>
+        <div class="intro-img reveal" style="transition-delay:200ms">
+          <img src="assets/images/muay-thai/training-1.jpg" alt="Two students sparring with boxing gloves during Muay Thai training at Prodigy Jiu-Jitsu" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EIGHT WEAPONS -->
+  <section id="eight-weapons" aria-labelledby="weapons-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--mt-gold)">The Weapons</span>
+        <h2 id="weapons-title">The Eight Weapons of Muay Thai</h2>
+        <p>Muay Thai's devastating effectiveness comes from mastering all eight striking tools — each with unique range, angle, and power.</p>
+      </div>
+      <div class="weapons-grid">
+        <div class="weapon-card reveal" style="transition-delay:0ms"><span class="weapon-emoji">👊</span><h3>Punches</h3><div class="weapon-techniques"><span class="weapon-technique">Jab</span><span class="weapon-technique">Cross</span><span class="weapon-technique">Hook</span><span class="weapon-technique">Uppercut</span></div></div>
+        <div class="weapon-card reveal" style="transition-delay:100ms"><span class="weapon-emoji">🦵</span><h3>Kicks</h3><div class="weapon-techniques"><span class="weapon-technique">Roundhouse</span><span class="weapon-technique">Teep</span><span class="weapon-technique">Body Kick</span><span class="weapon-technique">Low Kick</span></div></div>
+        <div class="weapon-card reveal" style="transition-delay:200ms"><span class="weapon-emoji">💥</span><h3>Elbows</h3><div class="weapon-techniques"><span class="weapon-technique">Horizontal</span><span class="weapon-technique">Diagonal</span><span class="weapon-technique">Upward</span><span class="weapon-technique">Spinning</span></div></div>
+        <div class="weapon-card reveal" style="transition-delay:300ms"><span class="weapon-emoji">🦴</span><h3>Knees</h3><div class="weapon-techniques"><span class="weapon-technique">Straight Knee</span><span class="weapon-technique">Diagonal Knee</span><span class="weapon-technique">Flying Knee</span><span class="weapon-technique">Clinch Knee</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IS IT FOR -->
+  <section id="who-for" aria-labelledby="who-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who Is It For</span>
+        <h2 id="who-title">Muay Thai Is For Everyone</h2>
+        <p>Whether you want to get in the best shape of your life or develop real fighting skills — Muay Thai delivers both.</p>
+      </div>
+      <div class="who-for-grid">
+        <div class="who-card reveal">
+          <span class="who-card-icon">🏃</span>
+          <h3>The Fitness Seeker</h3>
+          <p>No other workout combines cardio, strength, coordination, and mental challenge like Muay Thai. You'll be in the best shape of your life within months — and you'll actually enjoy getting there.</p>
+          <ul class="who-list">
+            <li>800+ calories burned per class</li>
+            <li>Full-body conditioning every session</li>
+            <li>Stress relief and mental clarity</li>
+            <li>No fighting required — pads and bags only</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="font-size:0.9rem">This Is Me — Sign Me Up →</a>
+        </div>
+        <div class="who-card reveal" style="transition-delay:200ms">
+          <span class="who-card-icon">🥊</span>
+          <h3>The Fighter / Competitor</h3>
+          <p>Authentic pad work, technical drilling, controlled sparring, and competition preparation for those who want to test themselves in the ring or cage.</p>
+          <ul class="who-list">
+            <li>Dominant striking system in professional MMA</li>
+            <li>Competition-level pad work and sparring</li>
+            <li>Clinch work, knees, and elbow entries</li>
+            <li>Cross-training with BJJ for complete MMA game</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="font-size:0.9rem">This Is Me — Sign Me Up →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS STRUCTURE -->
+  <section id="class-structure" aria-labelledby="structure-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--mt-gold)">What to Expect</span>
+        <h2 id="structure-title">A Typical Muay Thai Class</h2>
+        <p>Every class follows a purposeful structure designed to build real skill, real fitness, and real confidence.</p>
+      </div>
+      <div class="structure-steps reveal">
+        <div class="structure-step"><div class="step-circle">🏃</div><h4>Warm-Up</h4><p>Jump rope, shadowboxing &amp; mobility</p></div>
+        <div class="structure-step"><div class="step-circle">📖</div><h4>Technique</h4><p>Strikes, combos &amp; defensive movement</p></div>
+        <div class="structure-step"><div class="step-circle">🥊</div><h4>Pad Work</h4><p>Partner drills with Thai pads &amp; bags</p></div>
+        <div class="structure-step"><div class="step-circle">⚡</div><h4>Sparring</h4><p>Controlled sparring or advanced drilling</p></div>
+        <div class="structure-step"><div class="step-circle">🧘</div><h4>Cool Down</h4><p>Stretching &amp; recovery</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MMA CALLOUT -->
+  <section id="mma-callout" aria-label="Muay Thai for MMA">
+    <div class="container">
+      <div class="mma-banner reveal">
+        <div>
+          <span class="section-label" style="color:var(--mt-gold)">MMA &amp; Self-Defense</span>
+          <h2>The Most Effective <em>Stand-Up Art</em> in MMA</h2>
+          <p>Look at any elite MMA fighter's striking game and you'll find Muay Thai at the core. The ability to strike with all eight limbs — and dominate the clinch with elbows and knees — makes Muay Thai unmatched for cage fighting.</p>
+          <p>For self-defense, it's equally powerful. Muay Thai's emphasis on range management, powerful kicks, and clinch control makes it immediately practical in real-world situations.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:0.75rem">Add Striking to Your Game →</a>
+        </div>
+        <img src="assets/images/muay-thai/training-2.jpg" alt="Muay Thai students sparring and training at Prodigy Jiu-Jitsu with Fuji Mats and Prodigy logo visible" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="mt-stats" aria-label="Program statistics">
+    <div class="container">
+      <div class="stats-row reveal">
+        <div class="stat-block"><div class="stat-value">800+</div><div class="stat-label">Calories Burned Per Class</div></div>
+        <div class="stat-block"><div class="stat-value">8</div><div class="stat-label">Weapons to Master</div></div>
+        <div class="stat-block"><div class="stat-value">3x</div><div class="stat-label">Weekly Classes Available</div></div>
+        <div class="stat-block"><div class="stat-value">All</div><div class="stat-label">Levels Welcome</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="mt-schedule" aria-labelledby="mts-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--mt-gold)">Class Times</span>
+        <h2 id="mts-title">Weekly Muay Thai Schedule</h2>
+        <p>Three classes a week — morning and evening options to fit your schedule.</p>
+      </div>
+      <div class="mt-sched-grid reveal">
+        <div class="mt-sched-card"><div class="mt-sched-day">Monday</div><div class="mt-sched-time">10:45 AM – 11:45 AM</div><div class="mt-sched-name">Adult Muay Thai — All Levels</div></div>
+        <div class="mt-sched-card"><div class="mt-sched-day">Tuesday</div><div class="mt-sched-time">7:30 PM – 8:30 PM</div><div class="mt-sched-name">Muay Thai — All Levels</div></div>
+        <div class="mt-sched-card"><div class="mt-sched-day">Thursday</div><div class="mt-sched-time">7:30 PM – 8:30 PM</div><div class="mt-sched-name">Muay Thai — All Levels</div></div>
+      </div>
+      <div style="text-align:center" class="reveal"><a href="schedule.html" class="btn btn-primary">View Full Schedule →</a></div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR -->
+  <section id="mt-instructor" aria-labelledby="mti-title">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:340px 1fr;gap:5rem;align-items:center" class="instructor-layout">
+        <div class="reveal" style="position:relative">
+          <img src="assets/images/about/coach-chino.webp" alt="Coach Chino — Muay Thai and BJJ Instructor at Prodigy Jiu-Jitsu in gray gi with black belt" loading="lazy" style="width:100%;height:420px;object-fit:cover;object-position:center top;border-radius:12px;border:1px solid rgba(255,255,255,0.07);box-shadow:0 24px 60px rgba(0,0,0,0.5)" />
+          <span style="position:absolute;bottom:1.25rem;left:1.25rem;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);border:1px solid rgba(212,160,23,0.3);border-radius:100px;padding:0.35rem 1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mt-gold)">Black Belt · Muay Thai Coach</span>
+        </div>
+        <div class="reveal" style="transition-delay:200ms">
+          <span class="section-label" style="color:var(--mt-gold)">Your Coach</span>
+          <h2 id="mti-title" style="font-size:clamp(2rem,3.5vw,3rem);margin-bottom:0.5rem">Coach Chino</h2>
+          <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;color:var(--mt-gold);letter-spacing:0.12em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem">Muay Thai &amp; BJJ Instructor</span>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1rem;font-size:0.95rem">Coach Chino brings a rare combination of combat sports expertise — a black belt in BJJ with deep roots in Muay Thai, trained with top-level striking coaches in the US. His classes are technically demanding and athlete-focused, bridging the gap between traditional Thai boxing and modern combat sports.</p>
+          <blockquote style="border-left:3px solid var(--mt-gold);padding-left:1.25rem;margin:1.5rem 0;font-style:italic;color:rgba(255,255,255,0.8);font-size:1rem;line-height:1.7">"Muay Thai isn't just about hitting hard. It's about hitting smart — controlling distance, timing, and composure under pressure. That's what we build here."</blockquote>
+          <a href="about.html#coaches" class="btn btn-secondary">Meet All Coaches →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="mt-faq" style="padding:80px 0;background:var(--surface)" aria-labelledby="mtfaq-title">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 2fr;gap:5rem;align-items:start" class="faq-layout">
+        <div class="reveal"><span class="section-label" style="color:var(--mt-gold)">Questions</span><h2 id="mtfaq-title" style="font-size:clamp(1.8rem,3vw,2.8rem)">Muay Thai FAQs</h2><p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7">Everything you need to know before your first class.</p></div>
+        <div class="faq-list reveal" style="transition-delay:200ms">
+          <div class="faq-item"><button class="faq-question">Do I need any experience to start?<span class="faq-icon">+</span></button><div class="faq-answer"><p>None. Our Muay Thai classes are open to all experience levels. Beginners are walked through fundamentals while more experienced students work on advanced combinations and sparring.</p></div></div>
+          <div class="faq-item"><button class="faq-question">Is Muay Thai the same as kickboxing?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Muay Thai includes everything in kickboxing (punches and kicks), plus elbows, knees, and clinch fighting — making it a more complete and effective system. Think of Muay Thai as kickboxing's more complete, battle-tested cousin.</p></div></div>
+          <div class="faq-item"><button class="faq-question">Will I have to spar?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Sparring is always optional. Many members train purely on pads and heavy bags without ever sparring — and still get an incredible workout and technical skill development.</p></div></div>
+          <div class="faq-item"><button class="faq-question">Is Muay Thai good for weight loss?<span class="faq-icon">+</span></button><div class="faq-answer"><p>It's one of the best. A single Muay Thai class burns 500–800 calories while building muscle, improving cardiovascular fitness, and developing coordination. Many students report dramatic body composition changes within the first few months.</p></div></div>
+          <div class="faq-item"><button class="faq-question">Can I train Muay Thai and Jiu-Jitsu together?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Absolutely — and we highly recommend it. The combination of Muay Thai striking and BJJ grappling is the foundation of a complete MMA game. Many of our members cross-train in both programs.</p></div></div>
+          <div class="faq-item"><button class="faq-question">What equipment do I need?<span class="faq-icon">+</span></button><div class="faq-answer"><p>For your first class, just wear comfortable athletic clothing. If you continue, we'll guide you on boxing gloves, hand wraps, and shin guards. We can recommend quality gear at all price points.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="lead-form-section" aria-labelledby="mtform-title">
+    <div class="container">
+      <div class="lead-inner">
+        <div class="lead-copy reveal">
+          <span class="section-label" style="color:var(--mt-gold)">Free First Class</span>
+          <h2 id="mtform-title">Step Into the Ring. Your First Class Is Free.</h2>
+          <p>No experience. No gear. No excuses. Just show up and let us handle the rest.</p>
+          <ul class="lead-bullets">
+            <li class="lead-bullet">One free class, zero obligation</li>
+            <li class="lead-bullet">All levels welcome</li>
+            <li class="lead-bullet">3 classes per week available</li>
+            <li class="lead-bullet">Classes forming now — space limited</li>
+          </ul>
+        </div>
+        <div class="form-card reveal" style="transition-delay:200ms">
+          <h3>Claim Your Free Muay Thai Class</h3>
+          <p>Fill in your details and we'll reach out within 24 hours.</p>
+          <form id="mt-form" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="John Smith" required /></div>
+              <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required /></div>
+            </div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="john@example.com" required /></div>
+            <div class="form-group"><label for="program">Program Interest</label>
+              <select id="program" name="program"><option value="muay-thai" selected>Muay Thai</option><option value="adult-gi">Adult Gi Jiu-Jitsu</option><option value="adult-nogi">Adult No-Gi Jiu-Jitsu</option><option value="both">Muay Thai + BJJ</option></select>
+            </div>
+            <div class="form-group"><label for="time">Preferred Class Time</label>
+              <select id="time" name="time"><option value="">Select preference...</option><option value="morning">Monday AM (10:45)</option><option value="tue-eve">Tuesday PM (7:30)</option><option value="thu-eve">Thursday PM (7:30)</option></select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-form">Claim Free Class →</button>
+            <p class="form-privacy">🔒 We respect your privacy. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="form-success" role="alert"><div class="checkmark-circle">✓</div><h3>You're All Set!</h3><p>We'll be in touch within 24 hours — get ready to train!</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALSO EXPLORE -->
+  <section class="also-explore" aria-labelledby="explore-title">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Also Explore</span><h2 id="explore-title">More Programs at Prodigy</h2></div>
+      <div class="explore-cards">
+        <a href="adult-jiu-jitsu.html" class="explore-card reveal"><div class="explore-card-img" style="background-image:url('assets/images/adult-jiu-jitsu/gi-class-2.jpg')"></div><div class="explore-card-body"><h3>Adult Jiu-Jitsu</h3><p>Combine your striking with elite grappling. Gi &amp; No-Gi for all levels.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Explore →</span></div></a>
+        <a href="kids-jiu-jitsu.html" class="explore-card reveal" style="transition-delay:150ms"><div class="explore-card-img" style="background-image:url('assets/images/kids-jiu-jitsu/combat.jpg')"></div><div class="explore-card-body"><h3>Kids Jiu-Jitsu</h3><p>Ages 5–17. Confidence, discipline &amp; self-defense.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Explore →</span></div></a>
+        <a href="contact.html" class="explore-card reveal" style="transition-delay:300ms"><div class="explore-card-img" style="background-image:url('assets/images/contact/bg.jpg')"></div><div class="explore-card-body"><h3>Get Started Today</h3><p>First class is free. Just show up — we'll handle the rest.</p><span class="btn btn-primary" style="display:inline-flex;font-size:0.85rem;padding:0.6rem 1.2rem">Book Free Class →</span></div></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo" aria-label="Prodigy Jiu-Jitsu"><img src="assets/images/logo.png" alt="Prodigy Jiu-Jitsu" style="height:44px;width:auto;" /></a><p>Premier martial arts academy — Adult Jiu-Jitsu, Kids Jiu-Jitsu, and Muay Thai. All levels welcome.</p></div>
+      <nav class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+      <nav class="footer-col"><h4>Programs</h4><ul><li><a href="adult-jiu-jitsu.html">Adult Jiu-Jitsu</a></li><li><a href="kids-jiu-jitsu.html">Kids Jiu-Jitsu</a></li><li><a href="muay-thai.html">Muay Thai</a></li></ul></nav>
+      <address class="footer-col" style="font-style:normal"><h4>Contact</h4><div class="footer-contact-item"><span>📍</span><span>7720 Main St Unit #5<br>Fogelsville, PA 18051</span></div><div class="footer-contact-item"><span>📞</span><a href="tel:+14843504989">(484) 350-4989</a></div><div class="footer-contact-item"><span>✉️</span><a href="mailto:elizabeth@prodigyjiujitsu.com">elizabeth@prodigyjiujitsu.com</a></div></address>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Prodigy Jiu-Jitsu. All rights reserved.</p><p>Built with discipline. Powered by passion.</p></div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => { const o = hamburger.classList.toggle('open'); mobileMenu.classList.toggle('open', o); hamburger.setAttribute('aria-expanded', o); mobileMenu.setAttribute('aria-hidden', !o); document.body.style.overflow = o ? 'hidden' : ''; });
+const ro = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } }), { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+document.querySelectorAll('.faq-question').forEach(btn => btn.addEventListener('click', () => { const item = btn.closest('.faq-item'); const isOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open')); if (!isOpen) item.classList.add('open'); }));
+const form = document.getElementById('mt-form');
+if (form) form.addEventListener('submit', e => { e.preventDefault(); const n=form.querySelector('#name').value.trim(),p=form.querySelector('#phone').value.trim(),em=form.querySelector('#email').value.trim(); if(!n||!p||!em)return; form.style.display='none'; document.getElementById('form-success').classList.add('show'); });
+</script>
+<script src="assets/js/free-class-modal.js"></script>
+</body>
+</html>
