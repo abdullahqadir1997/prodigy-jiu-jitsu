@@ -745,13 +745,16 @@
     }
     .testimonial-card {
       min-width: 100%;
+      width: 100%;
       background: var(--surface2);
       border: 1px solid rgba(255,255,255,0.06);
       border-radius: 12px;
-      padding: 2.5rem;
+      padding: 24px;
       flex-shrink: 0;
-      max-width: 860px;
-      margin: 0 auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     .t-stars { color: #f0b429; font-size: 1.1rem; margin-bottom: 1rem; }
     .t-quote {
@@ -1050,7 +1053,7 @@
       .schedule-grid { grid-template-columns: repeat(2,1fr); }
       .hero-ctas { flex-direction: column; }
       .hero-ctas .btn { width: 100%; justify-content: center; }
-      .testimonial-card { padding: 1.5rem 1.25rem; }
+      .testimonial-card { padding: 24px; }
     }
   </style>
 </head>
@@ -1073,17 +1076,14 @@
             <a href="#" aria-haspopup="true" aria-expanded="false">Programs</a>
             <div class="dropdown-menu" role="menu">
               <a href="adult-jiu-jitsu.html" class="dropdown-card" role="menuitem">
-                <div class="dropdown-icon">🥋</div>
                 <h4>Adult Jiu-Jitsu</h4>
                 <p>Gi &amp; No-Gi for all levels, from beginner to competitor.</p>
               </a>
               <a href="kids-jiu-jitsu.html" class="dropdown-card" role="menuitem">
-                <div class="dropdown-icon">👦</div>
                 <h4>Kids Jiu-Jitsu</h4>
                 <p>Ages 5–17. Confidence, discipline &amp; self-defense skills.</p>
               </a>
               <a href="muay-thai.html" class="dropdown-card" role="menuitem">
-                <div class="dropdown-icon">🥊</div>
                 <h4>Muay Thai</h4>
                 <p>The Art of Eight Limbs — striking for fitness &amp; competition.</p>
               </a>
@@ -1185,7 +1185,6 @@
           <article class="program-card pc-adult reveal" style="transition-delay:0ms">
             <div class="program-card-img">
               <div class="program-card-img-inner"></div>
-              <div class="program-card-img-icon" aria-hidden="true">🥋</div>
               <span class="program-badge">Adults</span>
             </div>
             <div class="program-card-body">
@@ -1204,7 +1203,6 @@
           <article class="program-card pc-kids reveal" style="transition-delay:150ms">
             <div class="program-card-img">
               <div class="program-card-img-inner"></div>
-              <div class="program-card-img-icon" aria-hidden="true">👦</div>
               <span class="program-badge">Ages 5–17</span>
             </div>
             <div class="program-card-body">
@@ -1223,7 +1221,6 @@
           <article class="program-card pc-muay reveal" style="transition-delay:300ms">
             <div class="program-card-img">
               <div class="program-card-img-inner"></div>
-              <div class="program-card-img-icon" aria-hidden="true">🥊</div>
               <span class="program-badge">All Levels</span>
             </div>
             <div class="program-card-body">
